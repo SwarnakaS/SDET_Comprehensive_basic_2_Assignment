@@ -1,0 +1,8 @@
+<suite name="Sanity Test Suite">
+	<test name="Release 2020.5 Sanity Testing">
+		<classes>
+			<class name="AutomationAnywhereTestQu05.AutomationAnywhereTestQu05.AutomationAnywhere_Test_03"/>
+			<class name="AutomationAnywhereTestQu05.AutomationAnywhereTestQu05.AutomationAnywhere_Test_04"/>
+		</classes>
+	</test>
+</suite>

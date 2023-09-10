@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author SISPAMPATHY
+ *
+ */
+module Selenium_Qu_04 {
+	requires org.seleniumhq.selenium.grid;
+}

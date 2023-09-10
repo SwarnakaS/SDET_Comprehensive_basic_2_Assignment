@@ -1,0 +1,12 @@
+package Java_Qu01.Java_Qu01;
+
+public class WriteExcelDataDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		XSSFWorkbook workbook = new XSSFWorkbook(); 
+
+	}
+
+}

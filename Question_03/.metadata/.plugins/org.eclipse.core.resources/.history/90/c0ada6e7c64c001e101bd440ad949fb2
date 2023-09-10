@@ -1,0 +1,28 @@
+package Selenium_Qu03;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class Selenium_Qu03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Set the path to the ChromeDriver executable & Initialize the ChromeDriver
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\SISPAMPATHY\\Documents\\chromedriver_win32\\chromedriver.exe");
+		ChromeOptions option= new ChromeOptions();
+		option.addArguments("--remote-allow-origins=*");
+		ChromeDriver driver =new ChromeDriver(option);
+		
+		//Navigate to the Website
+		driver.get("https://www.automationanywhere.com/");
+		
+		//Task a: Verify the Automation Anywhere logo should be present
+		WebElement logo = driver.findElement(By.xpath("/html/body/div[1]/header/div/div/div/div[1]/div/a/img"));
+		logo.isDisplayed();
+
+	}
+
+}

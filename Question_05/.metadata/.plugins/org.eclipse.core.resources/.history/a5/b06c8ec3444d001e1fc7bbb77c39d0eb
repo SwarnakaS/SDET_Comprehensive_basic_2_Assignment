@@ -1,0 +1,9 @@
+package AutomationAnywhereTestQu05.AutomationAnywhereTestQu05;
+
+import org.testng.annotations.Test;
+
+public class AutomationAnywhere_Test_04 {
+  @Test
+  public void f() {
+  }
+}

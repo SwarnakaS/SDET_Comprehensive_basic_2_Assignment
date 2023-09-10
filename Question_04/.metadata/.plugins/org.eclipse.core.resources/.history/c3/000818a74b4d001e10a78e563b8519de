@@ -1,0 +1,55 @@
+package Selenium_Qu04;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class AutomationAnywhere_Qu04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Set the path to the ChromeDriver executable & Initialize the ChromeDriver
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\SISPAMPATHY\\Documents\\chromedriver_win32\\chromedriver.exe");
+
+		//Launch a browser in Chrome
+		ChromeOptions option = new ChromeOptions();
+		option.addArguments("--remote-allow-origins=*");
+		ChromeDriver driver = new ChromeDriver(option);
+		driver.get("https://www.automationanywhere.com/");
+
+		// Verify the presence of each element 
+		verifyElementPresenceAndNavigation(driver,"Products");
+		verifyElementPresenceAndNavigation(driver,"Solutions");
+		verifyElementPresenceAndNavigation(driver,"Resources");
+		verifyElementPresenceAndNavigation(driver,"Beyond RPA");
+		verifyElementPresenceAndNavigation(driver,"Company");
+		
+		//Close the browser
+		driver.quit();
+
+	}
+
+	private static void verifyElementPresenceAndNavigation(ChromeDriver driver, String linkText) {
+		// TODO Auto-generated method stub
+		WebElement link = driver.findElement(By.linkText(linkText));
+		
+		if(link !=null) {
+		link.click();
+		
+		if(driver.getTitle().contains(linkText)) {
+			System.out.println(linkText  + "link verified and navigation successful.");
+		}else {
+			System.out.println(linkText  + "link verified and navigation failed.");
+		}
+		
+		driver.navigate().back();{
+			System.out.println(linkText  + "link not found on the page.");
+		}
+	}
+		
+  }
+	
+}

@@ -1,0 +1,14 @@
+package Java_Qu01.Java_Qu01;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class WriteExcelDataDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		XSSFWorkbook workbook = new XSSFWorkbook(); 
+
+	}
+
+}

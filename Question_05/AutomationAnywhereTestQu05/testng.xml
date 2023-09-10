@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity Test Suite">
+	<test name="Release 2020.5 Sanity Testing">
+		<classes>
+			<class name="AutomationAnywhereTestQu05.AutomationAnywhereTestQu05.AutomationAnywhere_Test_03"/>
+			<class name="AutomationAnywhereTestQu05.AutomationAnywhereTestQu05.AutomationAnywhere_Test_04"/>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity Test Suite]">
+  <test name="Release 2020.5 Sanity Testing(failed)">
+    <classes>
+      <class name="AutomationAnywhereTestQu05.AutomationAnywhereTestQu05.AutomationAnywhere_Test_04">
+        <methods>
+          <include name="verifyResourcesLink"/>
+          <include name="verifyProductsLink"/>
+          <include name="verifySolutionsLink"/>
+          <include name="setUp"/>
+          <include name="verifyCompanyLink"/>
+          <include name="verifyBeyondRPALink"/>
+        </methods>
+      </class> <!-- AutomationAnywhereTestQu05.AutomationAnywhereTestQu05.AutomationAnywhere_Test_04 -->
+      <class name="AutomationAnywhereTestQu05.AutomationAnywhereTestQu05.AutomationAnywhere_Test_03">
+        <methods>
+          <include name="verifyRequestDemo"/>
+          <include name="setUp"/>
+          <include name="verifyLogoPresence"/>
+        </methods>
+      </class> <!-- AutomationAnywhereTestQu05.AutomationAnywhereTestQu05.AutomationAnywhere_Test_03 -->
+    </classes>
+  </test> <!-- Release 2020.5 Sanity Testing(failed) -->
+</suite> <!-- Failed suite [Sanity Test Suite] -->
